@@ -1,0 +1,10 @@
+#AUTHOR - Gileana Hannah G. Saguil
+# 4. PIN Validator
+#Validation Technique: Combination: Length + Content Valdation
+
+pin = input("Create a 6-digit PIN: ")
+
+if len(pin) == 6 and pin.isdigit():
+    print("Valid PIN")
+else:
+    print("Invalid PIN. Enter exactly 6 digits.")
