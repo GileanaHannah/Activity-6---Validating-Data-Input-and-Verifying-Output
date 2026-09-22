@@ -1,0 +1,14 @@
+#AUTHOR - Gileana Hannah G. Saguil
+# 3. Student ID checker
+#Validation Technique: Pattern Validation
+
+import re
+
+student_id = input("Enter student ID: ")
+
+pattern = (r"\d{4}-\d{4}")
+
+if re.fullmatch(pattern, student_id):
+    print("Valid student ID.")
+else:
+    print("Invalid student ID.")
